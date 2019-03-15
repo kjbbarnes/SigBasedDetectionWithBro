@@ -1,6 +1,6 @@
 # SigBasedDetectionWithBro
 Signature based detection using Bro scripting. Specifically detect DNS exfiltration/tunneling and suspicious subscribe traffic for MQTT protocol.
-
+```
 1. Check if packet is over port 1883
 2. Initialize local variables
 3. Convert the string to ascii hex code so it's easier to work with (since it is then all numbers, ie 8206 etc)
@@ -20,3 +20,4 @@ Builtin Functions used:
 3. hexstr_to_bytestring(hexstring) [hint: the string_to_ascii_hex function returns what is considered a hexstring)]
 4. sub_bytes(string, start index, length to grab) [hint: this function {despite the name} is used to grab a substring from a string, not just bytes]
 5. subst_string(string,  stringToMatch, replacement)
+```
